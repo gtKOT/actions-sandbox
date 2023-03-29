@@ -1,4 +1,4 @@
-name: check
+name: check(failure)
 
 on:
   pull_request:
@@ -7,5 +7,5 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - name: success
-        run: exit 0
+      - name: failure
+        run: exit 1
