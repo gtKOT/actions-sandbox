@@ -1,0 +1,12 @@
+name: check(skip)
+
+on:
+  pull_request:
+
+jobs:
+  check:
+    if: ${{ false }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: skip
+        run: echo "skip"
